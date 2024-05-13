@@ -2,6 +2,7 @@ import styled from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import Input from "./ui/Input";
 import Button from "./ui/Button";
+import Heading from "./ui/Heading";
 
 const StyledApp = styled.div`
   background-color: yellow;
@@ -12,6 +13,7 @@ export default function App() {
     <>
       <GlobalStyles />
       <StyledApp>
+        <Heading as="h1">Automex</Heading>
         <Button>Sex</Button>
         <Button>Condoms</Button>
         <Input type="tel"></Input>
