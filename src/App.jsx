@@ -3,9 +3,9 @@ import GlobalStyles from "./styles/GlobalStyles";
 import Input from "./ui/Input";
 import Button from "./ui/Button";
 import Heading from "./ui/Heading";
+import Row from "./ui/Row";
 
 const StyledApp = styled.div`
-  background-color: yellow;
   padding: 20px;
 `;
 export default function App() {
@@ -13,10 +13,18 @@ export default function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <Heading as="h1">Automex</Heading>
-        <Button>Sex</Button>
-        <Button>Condoms</Button>
-        <Input type="tel"></Input>
+        <Row>
+          <Heading as="h1">Automex</Heading>
+          <div>
+            <Button variation="primary" size="medium">
+              Sex
+            </Button>
+            <Button variation="secondary" size="medium">
+              Condoms
+            </Button>
+            <Input type="tel"></Input>
+          </div>
+        </Row>
       </StyledApp>
     </>
   );
